@@ -1,0 +1,184 @@
+.sidebar {
+  height: 100%;
+  transition: 0.3s;
+  position: fixed;
+  background-color: var(--bs-body-bg);
+  box-shadow: 0 2px 20px rgba(213,213,213,0.66);
+}
+
+#content {
+  margin-left: 90px;
+  height: 600px;
+  margin-top: 56px;
+  background-color: rgb(235,235,235);
+  overflow-y: overlay;
+}
+
+#btnToggleSidebar {
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 8px;
+}
+
+#topDiv {
+  padding: 15px;
+}
+
+.listTitle {
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.15s;
+}
+
+.list-group-item {
+  display: flex;
+  flex-direction: initial;
+  height: 46px;
+}
+
+.listIcon {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.list-group-item {
+  padding-left: 35px;
+}
+
+.props {
+  position: relative;
+}
+
+.expanded {
+  width: 300px;
+}
+
+.not-expanded {
+  width: 90px;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.sidebar-item {
+  padding: 0px 0px;
+}
+
+.sidebar-sublist {
+  list-style: none;
+  padding-left: 0px;
+  background-color: #ebebeb;
+  cursor: pointer;
+  border: 1px solid dodgerblue;
+  border-left: 3px solid dodgerblue;
+}
+
+.sidebar-sublist-item {
+  padding: 10px;
+  padding-left: 10px;
+  border-left: 4px solid rgba(0,0,139,0);
+  color: black;
+  transition: border 0.3s;
+}
+
+.sidebar-sublist-item:hover {
+  background-color: var(--bs-secondary-bg-subtle);
+  border-left: 4px solid dodgerblue;
+}
+
+.sidebar-item-link {
+  padding: .625rem;
+  padding-left: 7px;
+  display: block;
+  font-size: 15px;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-item-link:hover {
+  background-color: rgba(227,227,227,0.66);
+}
+
+.not-expd {
+  transition: 0.4s linear;
+  height: 0px;
+  overflow: hidden;
+}
+
+.expd {
+  height: 177.5px;
+  overflow: hidden;
+  transition: 0.4s linear;
+}
+
+.not-expanded {
+  width: 90px;
+}
+
+#sublist2 {
+}
+
+.expd2 {
+  height: 89px;
+  overflow: hidden;
+  transition: 0.4s linear;
+}
+
+.side-menu-sublist {
+  position: absolute;
+  background-color: var(--bs-body-bg);
+  left: 90px;
+  width: 90px;
+  height: 69px;
+  top: 65px;
+  border: 1px solid dodgerblue;
+  transition: 0.3s display;
+  box-shadow: 0px 0px 20px -15px grey;
+}
+
+.side-menu-sublist-ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.lis {
+  width: 100%;
+  margin: 0px;
+  padding: 5px 15px 5px 15px;
+  transition: 0.3s;
+}
+
+.lis:hover {
+  background-color: #ebebeb;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(235,235,235,0.66);
+  color: black;
+}
+
+.dropdown-item:active {
+  background-color: var(--bs-blue);
+  color: white;
+}
+
+.dropdown-item {
+  background-color: white;
+  transition: 0.2s;
+}
+
